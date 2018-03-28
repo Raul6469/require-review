@@ -8,6 +8,7 @@ function probotPlugin (robot) {
     'pull_request.synchronize',
     'pull_request_review.dismissed',
     'pull_request_review.submitted',
-    'pull_request_review_requested'
+    'pull_request.review_requested',
+    'pull_request.review_request_removed'
   ], checkReviews.bind(null, robot))
 }
